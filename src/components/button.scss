@@ -1,0 +1,11 @@
+@use '../.shared.scss' as *;
+
+.primary-button {
+    background-color: $primary-color;
+    color: white;
+    padding: 6px 6px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px;
+    font-weight: $bold-font;
+}

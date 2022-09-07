@@ -1,10 +1,15 @@
-export const Logo = () => (
+interface IProps {
+    style?: {}
+}
+
+export const Logo = ({ style = {} }: IProps): JSX.Element => (
     <svg
         width="190"
         height="49"
         viewBox="0 0 190 49"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        style={style}
     >
         <path
             fill-rule="evenodd"

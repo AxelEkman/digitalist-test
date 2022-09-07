@@ -1,1 +1,1 @@
-export const Menu = () => <div>Menu</div>
+export const Menu = (): JSX.Element => <div>Menu</div>

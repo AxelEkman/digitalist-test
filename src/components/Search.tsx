@@ -1,1 +1,1 @@
-export const Search = () => <div>Search</div>
+export const Search = (): JSX.Element => <div>Search</div>

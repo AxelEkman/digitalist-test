@@ -1,0 +1,15 @@
+.default-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    height: 100px;
+    width: 80px;
+    align-self: center;
+}
+
+.card-description {
+    margin: auto;
+    padding: 12px 12px;
+}
