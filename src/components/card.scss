@@ -1,6 +1,21 @@
+@use '../.shared.scss' as *;
+
 .default-card {
     display: flex;
     flex-direction: column;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .default-card {
+        min-width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .default-card {
+        width: calc(100% / $amount-of-features - 20px);
+    }
 }
 
 .card-image {
@@ -10,6 +25,6 @@
 }
 
 .card-description {
-    margin: auto;
-    padding: 12px 12px;
+    padding: 12px;
+    align-self: center;
 }

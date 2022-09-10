@@ -1,7 +1,22 @@
 .default {
-    min-height: 50vh;
+    height: 170px;
+    width: 160px;
+    margin: auto;
 }
 
 .hero-image {
-    min-height: 100vh;
+    background-color: rgba(#0000, 0.05);
+}
+
+@media only screen and (min-width: 600px) {
+    .hero-image {
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        height: 20vh;
+    }
 }

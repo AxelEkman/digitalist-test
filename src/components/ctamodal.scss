@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@300&display=swap');
+
 @media only screen and (max-width: 600px) {
     .default-modal {
-        /* TODO: currently not being applied */
         background-color: rgba($color: #000000, $alpha: 0.3);
         width: 100vw;
         max-width: 100%;
@@ -8,20 +9,28 @@
     }
 }
 
+@media only screen and (min-width: 600px) {
+    .default-modal {
+        width: 500px;
+        margin: 30vh auto;
+    }
+}
+
 .default-modal {
+    position: absolute;
+    z-index: 20;
     display: flex;
     flex-direction: column;
     background-color: rgba($color: #000000, $alpha: 0.6);
-    max-width: 30%;
     border-radius: 8px;
-    margin: 16px auto;
     color: white;
     padding: 20px;
 }
 
 .modal-title {
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     margin-top: 8px;
+    font-family: 'Poppins', 'sans-serif';
 }
 
 .modal-text {

@@ -3,11 +3,7 @@
 }
 
 .hero {
-    /* TODO: delete if not used */
-}
-
-.hero-image {
-    min-height: 100vh;
+    position: relative;
 }
 
 @media only screen and (max-width: 600px) {
@@ -19,4 +15,7 @@
 
 .features {
     display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-bottom: 60px;
 }

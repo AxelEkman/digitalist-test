@@ -1,21 +1,17 @@
-import { PrimaryButton } from './PrimaryButton'
 import './card.scss'
-
+import { Placeholder } from './Placeholder'
+import { PrimaryButton } from './PrimaryButton'
 interface IProps {
     description: string
-    image?: string
-    alt?: string
     className?: string
 }
 
 export const Card = ({
     description,
-    image = '',
-    alt = 'Alt lorem ipsum',
     className = 'default-card',
 }: IProps): JSX.Element => (
     <div className={className}>
-        <img src={image} alt={alt} className="card-image" />
+        <Placeholder className="default" />
         <div className="card-description">{description}</div>
         <PrimaryButton>Read more</PrimaryButton>
     </div>

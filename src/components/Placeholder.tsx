@@ -6,12 +6,13 @@ interface IProps {
 
 export const Placeholder = ({ className = 'default' }: IProps) => (
     <svg
-        width="242"
-        height="146"
+        width="auto"
+        height="auto"
         viewBox="0 0 242 146"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
+        opacity="0.4"
     >
         <path d="M1 1L241 145" stroke="black" />
         <path d="M241 1L1 145" stroke="black" />
