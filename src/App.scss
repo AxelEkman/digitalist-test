@@ -4,13 +4,7 @@
 
 .hero {
     position: relative;
-}
-
-@media only screen and (max-width: 600px) {
-    .features {
-        display: flex;
-        flex-direction: column;
-    }
+    height: 100vh;
 }
 
 .features {
@@ -18,4 +12,16 @@
     flex-grow: 1;
     justify-content: center;
     margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 600px) {
+    .features {
+        min-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
 }
