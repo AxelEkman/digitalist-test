@@ -4,10 +4,8 @@
     position: relative;
     z-index: 20;
     display: flex;
-
     flex-direction: column;
     background-color: rgba($color: #000000, $alpha: 0.4);
-    border-radius: 8px;
     color: white;
     padding: 20px;
 }
@@ -17,6 +15,7 @@
         width: 500px;
         margin: auto;
         top: 30vh;
+        border-radius: 8px;
     }
 }
 
@@ -26,6 +25,8 @@
         width: calc(100vw - 40px);
         max-width: 100%;
         color: white;
+        position: absolute;
+        bottom: 0;
     }
 }
 
