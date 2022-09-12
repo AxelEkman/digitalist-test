@@ -44,7 +44,7 @@ export const Navbar = (): JSX.Element => {
                             <SearchIcon
                                 height={16}
                                 width={16}
-                                style={{ marginTop: '2px', paddingRight: '0' }}
+                                style={{ marginTop: '1px', paddingLeft: '4px' }}
                                 onClick={() => setIsSearchOpen(!isSearchOpen)}
                             />
                         </div>
@@ -55,7 +55,7 @@ export const Navbar = (): JSX.Element => {
                         <SearchIcon
                             height={16}
                             width={16}
-                            style={{ marginTop: '2px', paddingRight: '0' }}
+                            style={{ marginTop: '2px', padding: 0 }}
                             onClick={() => setIsSearchOpen(!isSearchOpen)}
                         />
                     </div>

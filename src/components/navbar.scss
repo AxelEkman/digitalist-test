@@ -63,6 +63,7 @@
 .search-term {
     border: none;
     outline: none;
+    padding-right: 8px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -73,13 +74,13 @@
 
 @media only screen and (max-width: 600px) {
     .search-term {
-        min-width: 100px;
+        min-width: 80px;
     }
 }
 
 .search-bar-icons {
     display: flex;
-    justify-content: center;
+    padding-left: 0px;
 }
 
 .menu-bar {
