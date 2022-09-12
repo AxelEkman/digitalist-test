@@ -20,6 +20,11 @@ export const Navbar = (): JSX.Element => {
         return () => window.removeEventListener('resize', updateMedia)
     })
 
+    /* TODO: 
+    - make menu
+    - add animations
+    */
+
     return (
         <div className="navbar">
             <a href="/">{screenWidth > 600 ? <Logo /> : <LogoSmall />}</a>
@@ -60,7 +65,7 @@ export const Navbar = (): JSX.Element => {
                     style={{ marginTop: '2px' }}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 />
-                {isMenuOpen && <div className="menu-bar">It's open baby</div>}
+                {isMenuOpen && <div className="menu-bar"></div>}
             </div>
         </div>
     )
