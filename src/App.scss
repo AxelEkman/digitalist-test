@@ -7,28 +7,17 @@
     height: 100vh;
 }
 
-@media only screen and (min-width: 600px) {
-    .hero {
-        height: 100vh;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .hero {
-        height: 90vh;
-    }
-}
-
 .features {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 @media only screen and (min-width: 600px) {
     .features {
-        min-height: 500px;
+        min-height: 350px;
     }
 }
 
@@ -39,21 +28,22 @@
 }
 
 .hero-image {
-    background-color: rgba(#e6e184, 0.2);
+    background-color: rgba(#e6e184, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media only screen and (min-width: 600px) {
     .hero-image {
         min-width: 100vw;
         height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .hero-image {
         height: 100%;
+        min-width: 100vw;
     }
 }
