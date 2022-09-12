@@ -22,11 +22,6 @@ export const Navbar = (): JSX.Element => {
         return () => window.removeEventListener('resize', updateMedia)
     })
 
-    /* TODO: 
-    - add animations
-    - make search cancel remove input
-    */
-
     return (
         <div className="navbar">
             <a href="/">{screenWidth > 600 ? <Logo /> : <LogoSmall />}</a>
