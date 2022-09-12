@@ -18,3 +18,18 @@ export const features = [
             'JavaScript, often abbreviated as JS, is a lorem ipsum that is used for lorem ipsum.',
     },
 ]
+
+export const menuItems = [
+    {
+        heading: 'First',
+        content: ['First subtopic', 'Second subtopic', 'Third subtopic'],
+    },
+    {
+        heading: 'Second',
+        content: ['First subtopic', 'Second subtopic', 'Third subtopic'],
+    },
+    {
+        heading: 'Third',
+        content: ['First subtopic', 'Second subtopic', 'Third subtopic'],
+    },
+]

@@ -5,13 +5,17 @@ interface IProps {
     className?: string
     height?: string | number
     width?: string | number
+    fill?: string
+    style?: any
 }
 
 export const Cancel = ({
     onClick = () => {},
-    className = 'cancel-button',
+    className = 'search-bar-cancel-button',
     height = 32,
     width = 32,
+    fill = 'rgba(0, 0, 0, 0.45)',
+    ...props
 }: IProps) => (
     <button className={className} onClick={onClick}>
         <svg
@@ -21,7 +25,8 @@ export const Cancel = ({
             version="1.1"
             height={height}
             width={width}
-            fill="rgba(0, 0, 0, 0.45)"
+            fill={fill}
+            {...props}
         >
             <defs id="defs3021" />
             <path

@@ -15,7 +15,7 @@ export const SearchIcon = ({
     height = 32,
     width = 32,
     style,
-    fill = '',
+    fill = 'rgba(0, 0, 0, 0.45)',
 }: IProps): JSX.Element => (
     <button className={className} onClick={onClick}>
         <svg

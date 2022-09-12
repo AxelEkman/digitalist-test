@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import './navbar.scss'
+import './button.scss'
 import { Logo } from './Logo'
 import { SearchIcon } from './SearchIcon'
 import { MenuIcon } from './MenuIcon'
 import { Cancel } from './Cancel'
 import { LogoSmall } from './LogoSmall'
+import { menuItems } from '../constants'
 
 export const Navbar = (): JSX.Element => {
     const [isSearchOpen, setIsSearchOpen] = React.useState<boolean>(false)
@@ -21,7 +23,6 @@ export const Navbar = (): JSX.Element => {
     })
 
     /* TODO: 
-    - make menu
     - add animations
     - make search cancel remove input
     */
@@ -40,34 +41,59 @@ export const Navbar = (): JSX.Element => {
                             />
                         </form>
                         <div className="search-bar-icons">
+                            <Cancel
+                                height={16}
+                                width={16}
+                                onClick={() => setIsSearchOpen(!isSearchOpen)}
+                            />
                             <SearchIcon
                                 height={16}
                                 width={16}
-                                fill={'rgba(0, 0, 0, 0.45)'}
-                                style={{ marginTop: '2px' }}
-                                onClick={() => setIsSearchOpen(!isSearchOpen)}
-                            />
-                            <Cancel
-                                height={20}
-                                width={20}
+                                style={{ marginTop: '2px', paddingRight: '0' }}
                                 onClick={() => setIsSearchOpen(!isSearchOpen)}
                             />
                         </div>
                     </div>
                 )}
                 {!isSearchOpen && (
-                    <SearchIcon
-                        height={24}
-                        width={24}
-                        style={{ marginTop: '4px' }}
-                        onClick={() => setIsSearchOpen(!isSearchOpen)}
-                    />
+                    <div className="inactive-search-bar">
+                        <SearchIcon
+                            height={16}
+                            width={16}
+                            style={{ marginTop: '2px', paddingRight: '0' }}
+                            onClick={() => setIsSearchOpen(!isSearchOpen)}
+                        />
+                    </div>
                 )}
                 <MenuIcon
                     style={{ marginTop: '2px' }}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 />
-                {isMenuOpen && <div className="menu-bar"></div>}
+                {isMenuOpen && (
+                    <div className="menu-bar">
+                        {menuItems.map((item) => {
+                            return (
+                                <div className="menu-bar-column">
+                                    <h2 className="menu-bar-column-heading">
+                                        {item.heading}
+                                    </h2>
+                                    {item.content.map((piece) => {
+                                        return (
+                                            <div className="menu-bar-content">
+                                                {piece}
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            )
+                        })}
+                        <Cancel
+                            onClick={() => setIsMenuOpen(!isMenuOpen)}
+                            className="menu-bar-cancel-button"
+                            fill="white"
+                        />
+                    </div>
+                )}
             </div>
         </div>
     )
