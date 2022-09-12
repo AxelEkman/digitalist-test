@@ -1,12 +1,13 @@
 @use '../.shared.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 .primary-button {
     background-color: $primary-color;
     color: white;
-    padding: 6px 6px;
+    padding: 8px 12px;
     margin: auto;
-    border-radius: 8px;
-    font-weight: $bold-font;
+    border-radius: $default-radius;
+    font-family: 'Source-Sans-Pro', sans-serif;
+    font-weight: $semibold-font;
     border-color: $primary-color-shade;
-    font-family: sans-serif;
 }
