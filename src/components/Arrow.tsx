@@ -3,15 +3,15 @@ import './button.scss'
 interface IProps {
     onClick: () => void
     className?: string
-    height?: string
-    width?: string
+    height?: string | number
+    width?: string | number
 }
 
 export const Arrow = ({
     onClick = () => {},
     className = 'arrow-button',
-    height = '32',
-    width = '32',
+    height = 32,
+    width = 32,
 }: IProps) => (
     <button className={className} onClick={onClick}>
         <svg

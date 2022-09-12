@@ -1,3 +1,5 @@
+@use '../.shared.scss' as *;
+
 .navbar {
     position: absolute;
     top: 0;
@@ -14,4 +16,60 @@
 .logo {
     display: flex;
     align-self: left;
+}
+
+.navbar-icon {
+    border: none;
+    background-color: transparent;
+}
+
+.search-bar {
+    display: flex;
+    background-color: white;
+    border-radius: 24px;
+    height: 20px;
+    margin: auto 0;
+    margin-top: auto;
+    margin-right: 8px;
+    padding: 8px;
+    padding-left: 16px;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 600px) {
+    .search-bar {
+        min-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        min-width: 120px;
+    }
+}
+
+.search-term {
+    border: none;
+    outline: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .search-term {
+        min-width: 210px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .search-term {
+        min-width: 100px;
+    }
+}
+
+.search-bar-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar {
+    padding: 8px;
 }
