@@ -1,4 +1,4 @@
-import './arrow.scss'
+import './button.scss'
 
 interface IProps {
     onClick: () => void
@@ -9,7 +9,7 @@ interface IProps {
 
 export const Arrow = ({
     onClick = () => {},
-    className = 'default-arrow',
+    className = 'arrow-button',
     height = '32',
     width = '32',
 }: IProps) => (

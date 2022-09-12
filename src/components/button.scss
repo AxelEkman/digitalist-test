@@ -11,3 +11,17 @@
     font-weight: $semibold-font;
     border-color: $primary-color-shade;
 }
+
+.arrow-button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 65vh;
+    z-index: 20;
+}
+
+@media only screen and (max-width: 600px) {
+    .arrow-button {
+        display: hidden;
+    }
+}
