@@ -2,7 +2,6 @@ import './App.scss'
 import { Card } from './components/Card'
 import { CTAModal } from './components/CTAModal'
 import { Navbar } from './components/Navbar'
-import { Placeholder } from './components/Placeholder'
 
 const modalText =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ante, cursus viverra sagittis quis, hendrerit eget dolor.'
@@ -31,7 +30,7 @@ function App() {
             <div className="hero">
                 <Navbar />
                 <CTAModal description={modalText} />
-                <Placeholder className="hero-image" />
+                <div className="hero-image" />
             </div>
             <div className="features">
                 {features.map((feature) => (

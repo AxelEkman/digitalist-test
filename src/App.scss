@@ -37,3 +37,23 @@
         flex-direction: column;
     }
 }
+
+.hero-image {
+    background-color: rgba(#e6e184, 0.2);
+}
+
+@media only screen and (min-width: 600px) {
+    .hero-image {
+        min-width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        height: 100%;
+    }
+}
