@@ -23,6 +23,7 @@ export const Navbar = (): JSX.Element => {
     /* TODO: 
     - make menu
     - add animations
+    - make search cancel remove input
     */
 
     return (
@@ -31,12 +32,13 @@ export const Navbar = (): JSX.Element => {
             <div style={{ display: 'flex' }}>
                 {isSearchOpen && (
                     <div className="search-bar">
-                        <input
-                            type="text"
-                            className="search-term"
-                            placeholder="What are you looking for?"
-                            onSubmit={() => setIsSearchOpen(!isSearchOpen)}
-                        />
+                        <form onSubmit={() => setIsSearchOpen(!isSearchOpen)}>
+                            <input
+                                type="text"
+                                className="search-term"
+                                placeholder="What are you looking for?"
+                            />
+                        </form>
                         <div className="search-bar-icons">
                             <SearchIcon
                                 height={16}
