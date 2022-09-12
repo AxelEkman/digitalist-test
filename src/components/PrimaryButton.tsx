@@ -4,8 +4,14 @@ import './button.scss'
 interface IProps {
     /* NB: children are required */
     children: ReactNode
+    onClick: () => void
 }
 
-export const PrimaryButton = ({ children }: IProps): JSX.Element => (
-    <button className="primary-button">{children}</button>
+export const PrimaryButton = ({
+    children,
+    onClick = () => {},
+}: IProps): JSX.Element => (
+    <button onClick={onClick} className="primary-button">
+        {children}
+    </button>
 )

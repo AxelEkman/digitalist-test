@@ -1,3 +1,5 @@
+@use '.shared.scss' as *;
+
 .app {
     text-align: center;
 }
@@ -28,7 +30,7 @@
 }
 
 .hero-image {
-    background-color: rgba(#e6e184, 0.3);
+    background-color: $placeholder-color;
     position: absolute;
     top: 0;
     left: 0;

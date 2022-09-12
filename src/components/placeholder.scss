@@ -1,8 +1,10 @@
+@use '../.shared.scss' as *;
+
 .default {
     height: 170px;
     width: 160px;
     margin: auto;
-    background-color: rgba(#e6e184, 0.3);
+    background-color: $placeholder-color;
     border-radius: 120px;
     margin-bottom: 12px;
 }
